@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Introduction to Data Science with R</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="謝舒凱" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/chocolate.css" rel="stylesheet" />
+    <link href="libs/remark-css/chocolate-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+
+
+class: title-slide
+
+.bg-text[
+# Gendered NLP
+### gender-neural and bias-free
+
+&lt;hr /&gt;
+
+10月  1, 2019  
+謝舒凱 台大語言學研究所
+]
+
+
+
+
+
+---
+background-image: url(../img/emo/boredom-small.png)
+---
+# Outline
+
+- Gender (bias) and Language
+
+- Gendered AI/NLP
+
+- Toward a gender-neural, bias-free AI/NLP
+
+
+???
+https://twitter.com/math_rachel/status/1151209163084582912
+
+
+---
+## AI 介入人類生活之日常
+
+- 不僅在科技應用或娛樂上，而是涵蓋了求職、入學、信用借貸等生活。
+
+
+&gt; Is **decision-making-by-algorithm** a way to amplify, extend and make inscrutable the biases and discrimination that is prevalent in society?
+
+
+
+
+
+
+---
+## Human bias is a problem for AI
+
+![](https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/botvsbrain-796x417.jpg)
+
+- Machine learning systems are what they EAT.
+
+
+???
+https://thenextweb.com/artificial-intelligence/2018/04/10/human-bias-huge-problem-ai-heres-going-fix/
+
+
+
+
+---
+# Gender, Sexuality and Language
+### 性/別 &amp; 語言
+
+
+- 對立立場如何反映在語言的使用上？
+- 對立立場如何透過語言來形塑論辯？
+
+
+
+
+
+---
+## 語言與避難所
+
+lavendar linguisticsc
+
+
+---
+# 語言：人類慾望之鏡
+
+
+AI 渴望性：別的一百種方式
+
+
+
+???
+https://theconversation.com/artificial-intelligence-has-a-gender-bias-problem-just-ask-siri-123937
+
+
+---
+## Bias and Discimination
+
+
+
+???
+https://www.catalyst.org/research/trend-brief-gender-bias-in-ai/
+
+
+
+---
+## Bias-free languages (?)
+
+Avoiding sexism, racism, ageism
+
+https://www.gvsu.edu/cms4/asset/CC3BFEEB-C364-E1A1-A5390F221AC0FD2D/bias-free_language.pdf
+
+
+
+![](https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-us.s3.amazonaws.com%2Fd2dfbde4-219f-11e8-9efc-0cd3483b8b80?fit=scale-down&amp;source=next&amp;width=700)
+
+
+
+
+
+
+
+---
+## Words, Discourse and Stance
+詞語與立場：「同性戀」與「同志」二詞在對立論述中的使用 (洪 2019)
+
+
+
+
+
+
+
+
+---
+## Hate speech
+語詞、仇恨與偏見
+Cyberhate speech of misogyny on PTT forum (Chen and Hsieh, 2019)
+
+
+
+
+
+
+
+
+---
+# Gender bias in AI/NLP
+
+
+From **Gender and NLP** to **Gendered NLP**
+
+- Natural Language Processing/Understanding is the core of GAI.
+
+- Machine learning (as employed in NLP) is trained on data that encodes human biases. More concerns are raised about the kinds of social biases that it reinforces and perpetuates.
+
+
+
+???
+As machine learning becomes increasingly tasked with consequential real-world decisions, ever more concerns are raised about the kinds of social biases that it reinforces and perpetuates.
+
+
+
+https://unbabel.com/blog/gender-bias-artificial-intelligence/ !!!
+https://rare-technologies.com/word2vec-tutorial/#bonus_app
+
+
+---
+## 虛實之間、撲朔迷離
+
+![](img/fake.png)
+
+
+
+---
+## Sexually biased Toxic Comments
+
+
+- generator demonstation 
+
+
+
+
+
+---
+## Bias in Natural Language Processing
+
+-【**dataset bias**】sampling bias in a given dataset, giving rise to content bias
+
+-【**model bias**】bias in the output of a model.., which results in 
+
+-【**social bias**】model bias toward/against particular socio-demographic groups of users
+
+
+反映在不同領域
+
+
+---
+# Gender Bias in NLP
+
+- our dataset are socially biased in all sorts of ways \Citet(zhao2017men), and the bias tends to be mirrored/amplified by the model.
+
+-  the problem of how to enhance fairness has often focused on interpretability. 
+
+-  To make machine learning systems more interpretable is to make their discriminatory tendencies transparent, and thus subject to correction.
+
+- 較嚴重的是目前的模型法律責任還不清楚
+
+
+
+
+
+---
+# Biased data in, biased data out
+
+現在 AI 模型讓語言分析退居幕後，無法人工參與調整
+
+
+
+
+---
+# Deep Neural Network
+
+![](img/doctorness.png)
+\Citet("Du2019FairnessID")
+(Du et al., 2019.Fairness in Deep Learning: A Computational Perspective)
+
+---
+# Gender Bias in Contextualized Word Embeddings
+
+- representing word meanings to vectors of numbers, are thus highly *sexists*.
+
+[@zhao2019gender] !!!!!!!!!!!!
+
+
+[reference](https://jyzhao.net/files/naacl19.pdf)
+
+[@bolukbasi2016man]
+
+
+
+
+---
+# 厭女 
+
+
+
+
+
+---
+# Google Cloud AI service
+
+
+&lt;img src = 'img/sentiment.bias.png' scale="10%"&gt;&lt;/img&gt;
+
+[try](https://cloud.google.com/natural-language/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=na-US-all-en-dr-bkws-all-all-trial-b-dr-1002250&amp;utm_content=text-ad-none-any-DEV_c-CRE_185611873602-ADGP_SKWS+%7C+Multi+~+null_Sentiment+Analysis-KWID_43700019051883991-kwd-19587244836&amp;utm_term=KW_%2Bsentiment%20%2Banalysis-ST_%2Bsentiment+%2Banalysis&amp;gclid=CjwKCAjw4KvPBRBeEiwAIqCB-Z5aqvZjiTfG9trX-7Pc2PFVNZv83d4Ao1wmzjLC18DuAIppq6ktqBoCGCoQAvD_BwE&amp;dclid=CJeozP7SgtcCFdFBNwodxRALzA)
+
+
+
+---
+## 開始受到重視
+
+- [1st ACL workshop on Gender Bias for NLP](
+https://genderbiasnlp.talp.cat/)
+
+- [Computational Ethics for NLP, CMU]( 
+http://demo.clab.cs.cmu.edu/ethical_nlp/)
+
+
+---
+## 「無性別」語音
+- Q: the First Genderless Voice, created to end gender bias in AI assistants.
+
+![](img/q.genderless.png)
+
+
+
+
+
+https://www.genderlessvoice.com/watch
+
+???
+為了創造 Q，哥本哈根大學語言學家和研究人員請來了 5 個自我認同為性別酷兒（queer、non-binary）的參與者進行聲音錄製 ，他們將這 5 人的聲音合成、調校，最後匯出一道聲源。聲源發表前，先在歐洲經過 4,600 人評分，分數從 1（偏向男聲）到 5（偏向女聲）最後發現性別中立的聲音介於 145 到 175 赫茲之間。
+
+
+
+
+
+---
+## 作法 Debiasing Method
+
+(Tim Baldwin, 2017)： Reduce the bias through explicit training regimes.
+
+- Explicit training models on diverse, balanced data in order to achieve 'social equity'
+
+- need to tease apart training scenario from modelling details
+
+- possible extra gains to be had enough explicit language-, geographical- and social-level regularisation during training
+
+
+---
+## Existing word-embedding debiasing techniques
+
+
+
+
+??? 
+GN-Glove 性別中立的詞嵌入學習
+https://zhuanlan.zhihu.com/p/44794638
+
+
+---
+##  Debiasing Gender Bias in Coreference Resolution
+[@rudinger2018gender]
+
+![](img/coreference.png)
+
+???
+比較貓捉老鼠的例子
+
+
+
+
+---
+## 但是
+
+
+- 工程師的兩難 (without) significantly affecting their performance on existing coreference benchmark datasets. 
+
+&gt; gender biases probably account for an increase in testing accuracy.
+
+
+
+- can computer algorithms be free of bias?
+
+&gt; artificial intelligence will never be “fair and balanced” toward all because fairness is perceived differently by different people. One person’s critical analysis is another’s hate speech. One person appreciates nudes in art and another is disgusted by pornography. One American raises a fist and declares MAGA and another screams “Impeach!”.
+
+
+???
+should be recognized and admitted.
+https://mindmatters.ai/2019/07/can-computer-algorithms-be-free-of-bias/
+
+
+---
+## 總結
+
+### Socially-Responsible NLP
+
+- Algorithmic Fairness, Accountability and Transparency in Machine Learning, by at least 
+
+    - avoiding demographic bias in data collection; and 
+
+    - developing methods to adequately mitigate these issues (e.g., identifying biases, adjusting sampling rates, de-biasing through regularization, or adversarial approaches to debiasing).
+
+
+???
+https://geomblog.github.io/fairness/
+
+
+---
+## Future
+
+
+- Moving forward with AI 
+    - data augmentation, model evaluation 大家一起來 &gt; AI 是所有人的朋友
+
+- transparent, open-design 犧牲一點效能，換來多一點透明
+    - "a rule-based, a feature-rich, and a neural coreference system all link gendered pronouns to pro-stereotypical entities with higher accuracy than anti-stereotypical entities" 
+
+- developing sketical algorithms. (debating machines)
+
+
+???
+https://www.digitalistmag.com/executive-research/how-ai-can-end-bias
+“From the perspective of a business leader who wants to do the right thing, it’s a design question,” says Cathy O’Neil, whose best-selling book Weapons of Math Destruction was long-listed for the 2016 National Book Award. “You wouldn’t let your company design a car and send it out in the world without knowing whether it’s safe. You have to design it with safety standards in mind,” she says. “By the same token, algorithms have to be designed with fairness and legality in mind, with standards that are understandable to everyone, from the business leader to the people being scored.” (To learn more from O’Neil about transparency in algorithms, read Thinkers in this issue.)
+
+
+
+
+
+
+
+
+---
+# References
+
+
+```
+## You haven't cited any references in this bibliography yet.
+```
+
+NULL
+
+
+- 洪漢唐. 2019. 詞語與立場：「同性戀」與「同志」二詞在對立論述中的使用。MS.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

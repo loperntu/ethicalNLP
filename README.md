@@ -21,6 +21,6 @@ https://genderbiasnlp.talp.cat/)
 
 ## 性別偏見
 
-- talk at 2019. AI 與性別論壇. 台大社科院. [slide](https://github.com/loperntu/ethicalNLP/blob/master/gendernlp.html)
+- talk at 2019. AI 與性別論壇. 台大社科院. [slide](genderednlp.html)
 
 ![](img/gender-language-ai.jpg)

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
   <head>
-    <title>Introduction to Data Science with R</title>
+    <title>Gendered NLP</title>
     <meta charset="utf-8" />
     <meta name="author" content="謝舒凱" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
@@ -18,15 +18,19 @@
 
 
 
+background-image: url(https://www.topbots.com/wp-content/uploads/2016/11/genderbias_ai_header_simple_web_1600x700-1280x640.jpg)
+background-position: center
+background-size: cover
+
 class: title-slide
 
 .bg-text[
 # Gendered NLP
-### gender-neural and bias-free
+### 性別與自然語言處理
 
 &lt;hr /&gt;
 
-10月  1, 2019  
+10月  3, 2019  
 謝舒凱 台大語言學研究所
 ]
 
@@ -50,10 +54,13 @@ https://twitter.com/math_rachel/status/1151209163084582912
 
 ---
 ## AI 介入人類生活之日常
-
+.large[
 - 不僅在科技應用或娛樂上，而是涵蓋了求職、入學、信用借貸等生活。
 
 
+
+
+]
 &gt; Is **decision-making-by-algorithm** a way to amplify, extend and make inscrutable the biases and discrimination that is prevalent in society?
 
 
@@ -64,9 +71,9 @@ https://twitter.com/math_rachel/status/1151209163084582912
 ---
 ## Human bias is a problem for AI
 
-![](https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/botvsbrain-796x417.jpg)
+![photo credit](https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/04/botvsbrain-796x417.jpg)
 
-- Machine learning systems are what they EAT.
+- .large[Machine learning systems are what they EAT].
 
 
 ???
@@ -79,44 +86,39 @@ https://thenextweb.com/artificial-intelligence/2018/04/10/human-bias-huge-proble
 # Gender, Sexuality and Language
 ### 性/別 &amp; 語言
 
+.large[
 
-- 對立立場如何反映在語言的使用上？
-- 對立立場如何透過語言來形塑論辯？
+- 性/別意識形態如何反映在語言的使用上？
 
+- 性/別偏見與對立立場如何透過語言來形塑論辯？
 
+]
 
-
-
----
-## 語言與避難所
-
-lavendar linguisticsc
 
 
 ---
-# 語言：人類慾望之鏡
+## 語言避難所
+
+Lavender linguistics and NLP (Wu and Hsieh, 2017)
 
 
-AI 渴望性：別的一百種方式
 
+- 結構偏好 
+
+&gt; 。在男同志的文本當中，排比的表述方式例如：好X好Y、最X最X、最X最Y、又X又Y、很X很X、很X很Y等被大
+
+- self-referred pronoun
+&gt;代名詞，本研究發現代名詞「我」以及「我們」在同志族群的文本中較異性戀文本更明顯的被大量使用。在文本中大量使用第一人稱代名詞時，可能反映出作者在情緒上的焦慮感與絕望(Pennbaker, 2011a)或是呈現出作者身處於社經地位較低的狀況 (Pennbaker, 2011b)
 
 
 ???
 https://theconversation.com/artificial-intelligence-has-a-gender-bias-problem-just-ask-siri-123937
 
 
----
-## Bias and Discimination
-
-
-
-???
-https://www.catalyst.org/research/trend-brief-gender-bias-in-ai/
-
 
 
 ---
-## Bias-free languages (?)
+## Bias and Discimination in Languages
 
 Avoiding sexism, racism, ageism
 
@@ -127,30 +129,48 @@ https://www.gvsu.edu/cms4/asset/CC3BFEEB-C364-E1A1-A5390F221AC0FD2D/bias-free_la
 ![](https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-us.s3.amazonaws.com%2Fd2dfbde4-219f-11e8-9efc-0cd3483b8b80?fit=scale-down&amp;source=next&amp;width=700)
 
 
-
-
+???
+https://www.catalyst.org/research/trend-brief-gender-bias-in-ai/
 
 
 
 ---
 ## Words, Discourse and Stance
-詞語與立場：「同性戀」與「同志」二詞在對立論述中的使用 (洪 2019)
+.large[詞語與立場：「同性戀」與「同志」二詞在對立論述中的使用] (洪, 2019)
+
+- 「同志」和「同性戀」不是近義詞！(Wu and Hsieh, 2017)
+![](img/gay1.png)
+
+&gt; 剛看到一個影片由小學生來辯論同志婚姻很有意思 (+)。
+她父母一直灌輸她不要當同性戀的觀念，讓她承受不小的壓力。
 
 
+---
+## Words, Discourse and Stance
+
+- 非常規名物化
+&gt; 同性戀行為
+
+- 搭配詞中的意識形態
+
+&gt; 下福盟中的這幾以同志為首的複合詞強調的是同志出現的特定場所（三溫暖）、兒童法律議題（收養）、特定同志組織專名（同志熱線）、指涉他者群體（同志圈），還有一個是加上表達「全部所有」的副詞（同志都）。
 
 
+- 偏見隱喻：`同志是一種疾病`
 
+- 同性戀/同志養成教育 vs. 同性戀文化 vs. 同性戀生活
 
 
 
 ---
 ## Hate speech
 語詞、仇恨與偏見
-Cyberhate speech of misogyny on PTT forum (Chen and Hsieh, 2019)
 
+- Sexually biased Toxic Comments
 
+![](img/tsai.png)
 
-
+![](img/tsai2.png)
 
 
 
@@ -180,14 +200,6 @@ https://rare-technologies.com/word2vec-tutorial/#bonus_app
 ## 虛實之間、撲朔迷離
 
 ![](img/fake.png)
-
-
-
----
-## Sexually biased Toxic Comments
-
-
-- generator demonstation 
 
 
 
@@ -222,39 +234,39 @@ https://rare-technologies.com/word2vec-tutorial/#bonus_app
 
 
 ---
-background-image: url(../img/emo/boredom-small.png)
----
 # Biased data in, biased data out
 
 現在 AI 模型讓語言分析退居幕後，無法人工參與調整
 
+![](img/dnn.png)
+
 
 
 
 ---
-# Deep Neural Network
+# Fairness in Deep Neural Network
 
 ![](img/doctorness.png)
-\Citet("Du2019FairnessID")
+
 (Du et al., 2019.Fairness in Deep Learning: A Computational Perspective)
 
 ---
 # Gender Bias in Contextualized Word Embeddings
 
-- representing word meanings to vectors of numbers, are thus highly *sexists*.
+- representing word meanings to vectors of numbers, are thus highly *sexists*.(Zhao et al. 2019)
 
-[@zhao2019gender] !!!!!!!!!!!!
-
-
-[reference](https://jyzhao.net/files/naacl19.pdf)
-
-[@bolukbasi2016man]
+![](img/embeddings.bias.png)
 
 
 
 
 ---
-# 厭女 
+# 厭女的向量空間 
+Cyberhate speech of misogyny on PTT forum (Chen and Hsieh, 2019)
+
+- Extracting semantic representations of sexual biases from word vectors
+
+![](img/mysogyny.png)
 
 
 
@@ -264,14 +276,14 @@ background-image: url(../img/emo/boredom-small.png)
 # Google Cloud AI service
 
 
-&lt;img src = 'img/sentiment.bias.png' scale="10%"&gt;&lt;/img&gt;
+&lt;img src = 'img/sentiment.bias.png' &gt;&lt;/img&gt;
 
 [try](https://cloud.google.com/natural-language/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=na-US-all-en-dr-bkws-all-all-trial-b-dr-1002250&amp;utm_content=text-ad-none-any-DEV_c-CRE_185611873602-ADGP_SKWS+%7C+Multi+~+null_Sentiment+Analysis-KWID_43700019051883991-kwd-19587244836&amp;utm_term=KW_%2Bsentiment%20%2Banalysis-ST_%2Bsentiment+%2Banalysis&amp;gclid=CjwKCAjw4KvPBRBeEiwAIqCB-Z5aqvZjiTfG9trX-7Pc2PFVNZv83d4Ao1wmzjLC18DuAIppq6ktqBoCGCoQAvD_BwE&amp;dclid=CJeozP7SgtcCFdFBNwodxRALzA)
 
 
 
 ---
-## 開始受到重視
+## 學界開始重視
 
 - [1st ACL workshop on Gender Bias for NLP](
 https://genderbiasnlp.talp.cat/)
@@ -280,6 +292,8 @@ https://genderbiasnlp.talp.cat/)
 http://demo.clab.cs.cmu.edu/ethical_nlp/)
 
 
+---
+background-image: url(../img/emo/boredom-small.png)
 ---
 ## 「無性別」語音
 - Q: the First Genderless Voice, created to end gender bias in AI assistants.
@@ -317,14 +331,15 @@ https://www.genderlessvoice.com/watch
 
 
 
-??? 
+???
+
 GN-Glove 性別中立的詞嵌入學習
 https://zhuanlan.zhihu.com/p/44794638
 
 
 ---
 ##  Debiasing Gender Bias in Coreference Resolution
-[@rudinger2018gender]
+(=Rudinger et al., 2018)
 
 ![](img/coreference.png)
 
@@ -387,7 +402,7 @@ https://geomblog.github.io/fairness/
 https://www.digitalistmag.com/executive-research/how-ai-can-end-bias
 “From the perspective of a business leader who wants to do the right thing, it’s a design question,” says Cathy O’Neil, whose best-selling book Weapons of Math Destruction was long-listed for the 2016 National Book Award. “You wouldn’t let your company design a car and send it out in the world without knowing whether it’s safe. You have to design it with safety standards in mind,” she says. “By the same token, algorithms have to be designed with fairness and legality in mind, with standards that are understandable to everyone, from the business leader to the people being scored.” (To learn more from O’Neil about transparency in algorithms, read Thinkers in this issue.)
 
-
+https://arxiv.org/pdf/1908.08843.pdf
 
 
 
@@ -398,14 +413,10 @@ https://www.digitalistmag.com/executive-research/how-ai-can-end-bias
 # References
 
 
-```
-## You haven't cited any references in this bibliography yet.
-```
-
-NULL
-
-
 - 洪漢唐. 2019. 詞語與立場：「同性戀」與「同志」二詞在對立論述中的使用。MS.
+- 吳小涵，謝舒凱. Exploring Lavender Tongue from Social Media Texts. *The 2017 Conference on Computational Linguistics and Speech Processing.*
+- Leap, W. (1995). Beyond the lavender lexicon: Authenticity, imagination, and appropriation in lesbian and gay languages. US: Taylor &amp; Francis.
+- Pennebaker, J. W. (2011a). The secret life of pronouns. New Scientist, 211(2828), 42–45. https://doi.org/10.1016/S0262-4079(11)621.
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

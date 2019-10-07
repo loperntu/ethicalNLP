@@ -24,3 +24,15 @@ https://genderbiasnlp.talp.cat/)
 - talk at 2019. AI 與性別論壇. 台大社科院. [slide](genderednlp.html)
 
 ![](img/gender-language-ai.jpg)
+
+## 仇恨語言、惡毒評論（語言病毒）
+
+- talk at 2019. NLP for disinformation, propagation, toxic language and clickbait. [slide](nlp4if-forum.pdf)
+
+
+
+![](img/ufo-nlp4if.png)
+
+
+
+
